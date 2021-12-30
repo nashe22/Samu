@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nayelis</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+
+
+<!------    meta tags & scripts    ------>
+
+
+
+    <meta name="image:background" content=""/>
+    <meta name="image:sidebar" content=""/>
+    <meta name="image:tabimg" content=""/>
+
+    <meta name="color:background" content="#eaeaea"/>
+    <meta name="color:contain" content="#f8f8f8"/>
+    <meta name="color:sidebar" content="#f8f8f8"/>
+    <meta name="color:postbg" content="#eaeaea"/>
+    <meta name="color:title" content="#e2cd90"/>
+    <meta name="color:desc" content="#898989"/>
+    <meta name="color:descbg" content="#eaeaea"/>
+    <meta name="color:bold" content="#d4caa2"/>
+    <meta name="color:italic" content="#d4a587"/>
+    <meta name="color:text" content="#a8a8a8"/>
+    <meta name="color:links" content="#d4caa2"/>
+    <meta name="color:hover" content="#f3f3f3"/>
+
+    <meta name="text:title" content="oceans"/>
+    <meta name="text:subtitle" content="lorem ipsum"/>
+    <meta name="text:tabtitle" content="broken all this time"/>
+    <meta name="text:tabdesc" content="lorem ipsum"/>
+    
+    <meta name="text:tablink1" content="/"/>
+    <meta name="text:tablink2" content="/"/>
+    <meta name="text:tablink3" content="/"/>
+    <meta name="text:tablink4" content="/"/>
+    <meta name="text:tablink5" content="/"/>
+    <meta name="text:tablink1title" content="tab link 1"/>
+    <meta name="text:tablink2title" content="tab link 2"/>
+    <meta name="text:tablink3title" content="tab link 3"/>
+    <meta name="text:tablink4title" content="tab link 4"/>
+    <meta name="text:tablink5title" content="tab link 5"/>
+    
+
+
+    <style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=b84ed2eb31f8e1bbdb3e7a53afa67dd4"><link rel="shortcut icon" href="https://64.media.tumblr.com/15860273f4e6961eea57e9a31d7da019/80aeef857eee22c1-07/s128x128u_c1/56207d8cd4d499e271116b0721a88146c34895de.pnj" />
+    <link rel="alternate" type="application/rss+xml" href="https://st-nephalem.tumblr.com/rss" />
+    <title>𝐃𝐄𝐀𝐃𝐋𝐘 / 𝒹𝒶𝓎𝒹𝓇𝑒𝒶𝓂𝓈 </title>
+    <meta name="description" content="a burnt child loves the fire ." />     
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function() {
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:false,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+
+<script>
+$(document).ready(function() {
+//
+$('a.poplight[href^=#]').click(function() {
+var popID = $(this).attr('rel'); //Get Popup Name 
+var popURL = $(this).attr('href'); //Get Popup href to define size 
+var query= popURL.split('?');
+var dim= query[1].split('&');
+var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+$('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend();
+$('body').append('<div id="fade"></div>'); 
+$('#fade').css({'filter' : 'alpha(opacity=30)'}).fadeIn(); //Fade in the fade layer - .css({'filter' : 'alpha(opacity=30)'})
+return false; 
+}); 
+
+$('a.close, #fade').live('click', function() { 
+$('#fade, .popup_block').fadeOut(function() {
+$('#fade, a.close').remove(); //fade them both out
+}); 
+return false; 
+});
+}); 
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+   
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+ 
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+ 
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+ 
+})
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script> 
+(function($){ 
+$(document).ready(function(){ 
+$(“[title],a[title],img[title]”).style_my_tooltips({ 
+tip_follows_cursor:true, 
+tip_delay_time:90, 
+tip_fade_speed:600, 
+attribute:“title” 
+}); 
+}); 
+})(jQuery); 
+</script> 
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src ="//static.tumblr.com/fwgzvyf/Oj1o08f6h/shythemes.vr.js"></script>
+
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://static.tumblr.com/i5s2zks/6kOohwlux/pe-icon-7-stroke.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+
+
+
+<style type="text/css">
+
+
+
+/*   ------   fonts   ------   */
+
+
+@font-face { font-family: ally; src: url('https://dl.dropboxusercontent.com/s/17sjbqt7xfnor93/Paduka%20Script%20free.ttf') ; }
+
+
+@font-face { font-family: "shopping"; src: url('https://dl.dropboxusercontent.com/s/zruy1iywnp9fa5q/Shopping%20Script%20Demo.ttf') ;}
+
+
+@font-face { font-family:"germanica"; src: url(https://dl.dropbox.com/s/7bjd73k4b2048zh/Plain%20Germanica.ttf); }
+
+
+
+
+/*   ------   scrollbar  ------   */
+
+
+
+::-webkit-scrollbar { width: 0px; height:0px;  background:transparent; }
+
+::-webkit-scrollbar-thumb { background-color: transparent; }
+
+
+
+/*   ------   tooltip   ------   */
+
+
+
+#s-m-t-tooltip { max-width:250px; padding:4px; margin:-30px 12px; color:#828282; background:#f9f9f9; z-index:99999; font-size:7px;  border-radius:4px; text-transform:uppercase; font-variant:none; letter-spacing:2px; font-weight:bold; }
+
+
+
+/*   ------   selection   ------   */
+
+
+
+::-moz-selection { background:#e4d5cf; color:; }
+    
+::selection { background:#e4d5cf; color:; }
+
+
+
+/*   ------   text styles   ------   */
+
+
+
+body { background:#efefef; margin:0px; font-weight:500; color:#828282; font-family:'montserrat'; font-size:10px; line-height:16px; letter-spacing:.5px; text-align:justify; background-image:url('https://assets.tumblr.com/images/x.gif?v=1'); }
+     
+a { text-decoration:none; color:#e4d5cf; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+
+a:hover { color:#828282; background:transparent; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+
+b, strong { color:#ba8a86; font-weight:700; }
+
+em, i { color:#b27772; font-weight:600; }
+
+i:hover { background:transparent; }
+
+strike { color:#b27772; }
+
+small { font-size:10px; }
+
+big { color:#b87f76; font-weight:600; font-variant:small-caps; letter-spacing:2px; }
+
+sup { font-variant:small-caps; letter-spacing:2px; color:#ba8a86; font-weight:normal; }
+     
+blockquote { margin-left:5px; padding-left:10px; width:365px; border-left:1px solid #efefef; }
+       
+blockquote blockquote { padding-left:10px; width:345px; border-left:1px solid #efefef; }
+     
+h1 { color:#ba8a86; font-size:8px; letter-spacing:2px; text-transform:uppercase;font-family:'montserrat'; font-style:none; line-height:10px; text-align:left; padding:0px; }
+
+h2 { text-align: center; font-size:11px; letter-spacing:.5px; text-transform:lowercase; font-style:none; font-weight:400; line-height:14px; text-align:normal; padding:0px; }
+
+h3 { font-family:'montserrat'; font-size:24px; text-align:center; text-transform:lowercase; font-weight:400; letter-spacing:0px; margin-top:5px; color:#b27772; }
+
+
+
+/*   ------   images   ------   */
+
+
+
+img { border:none; max-width:100%; height:auto; border-radius:6px; }
+    
+resize { width: 300px; height:auto; }
+
+.photoset {  width:100%; border-radius:6px; }
+
+.photoset:hover { max-width:100%; }
+
+
+
+/*   ------   body   ------   */
+
+
+
+#contain { width:860px; height:560px; margin:auto; left:0px; right:0px; top:0px; bottom:0px; background:#f9f9f9; position:absolute; overflow:visible; border-radius:6px; z-index:1; background-image:url(''); }
+
+#entries { padding:10px; width:500px; height:390px; margin-left:340px; margin-top:150px; font-size:10px; position:absolute; font-family:'montserrat'; overflow-x:hidden; overflow-y:auto; letter-spacing:0px; }
+     
+#post { margin:auto; top:-22px; right:0px; bottom:0px; left:0px; width:400px; background: #f9f9f9; padding:0px; position:relative; border-radius:6px; margin-top:40px; }
+
+
+
+/*   ------   sidebar   ------   */
+
+
+
+#sidebar { background:#e4d5cf; width:340px; height:410px; position:absolute; overflow:visible; margin:150px 0px 0px 0px; }
+
+#sidebar img { width:340px; height:410px; border-radius:0px; position:absolute;  background:transparent; -webkit-filter:grayscale(0%); -moz-transition-duration:1s; -webkit-transition-duration:1s; -o-transition-duration:1s; border-radius:0px 0px 0px 6px; }
+
+.title { background:#f9f9f9; position:absolute; color:#b87f76; font-family:'germanica'; font-size:154px; width:480px; font-weight:500; height:90px; padding:0px 30px 60px 30px; margin:-150px 0px 0px 0px; line-height:20px; overflow:visible; text-shadow:4px 4px #efefef; text-align:left; letter-spacing:4px; z-index:9999999; text-transform:lowercase; border-radius:6px 0px 0px 0px; }
+
+.title strong { font-family:'ally'; font-size:80px; font-weight:400; color:#b27772;text-transform:lowercase;letter-spacing:0px;text-shadow:none; }
+
+.subtitle { position:absolute; width:400px; height:20px; padding:20px; letter-spacing:2px; font-size:6px; line-height:14px; text-align:justify; color:#828282; margin:-90px 0px 0px 20px; font-weight:400; text-transform:uppercase; font-variant:none; font-style:normal; text-shadow:none;z-index:999999999999; }
+
+.subtitle big { font-size:16px; font-weight:600; text-transform:uppercase; }
+
+.subtitle b { font-size:12px; }
+
+.desc { background:#e4d5cf; font-weight:400; position:absolute; width:200px; line-height:20px; height:54px; margin:-150px 0px 0px 540px; overflow:hidden; font-size:7.5px; color:#986f6f; padding:60px; text-transform:uppercase; padding-top:36px; font-family:'montserrat'; letter-spacing:1px; text-align:justify; border-radius:0px 6px 0px 0px;  z-index:99; -moz-transition-duration:1s; -webkit-transition-duration:1s; -o-transition-duration:1s; }
+
+.desc i { color:#b27772; font-weight:400; }
+
+.desc a { font-size:12px; font-weight:bold; }
+
+.desc a:hover { background:transparent; }
+
+.desc b { font-size:8px; }
+
+.desc h3 { font-family:'ally'; font-size:20px; text-align:center; text-transform:lowercase; font-weight:400; letter-spacing:0px; font-variant:none; margin-top:5px; margin-bottom:8px; color:#b87f76; text-shadow:3px 3px 3px ; }
+
+.sidelink { text-align:center; border-radius:6px; height:130px; width:100px; margin:-153px 0px 0px 450px; position:absolute; padding:10px; letter-spacing:0px; overflow:hidden; z-index:9999999999; }
+ 
+.sidelink a { position:relative; height:10px; width:60px; background:#f9f9f9; vertical-align: middle; margin:40px 0px 0px 0px; padding:10px; font-size:16px; line-height:45px; border-radius:6px; font-family:'arial'; font-weight:bold; letter-spacing:0px; color:#e4d5cf; display:inline; -moz-transition-duration:1s; -webkit-transition-duration:1s; -o-transition-duration:1s; }
+
+.sidelink a:hover { background:#f9f9f9; -moz-transition-duration:1s; -webkit-transition-duration:1s; -o-transition-duration:1s; }
+
+.sidelink i { color:#b27772; font-weight:600; }
+
+
+
+/*   ------   pagination   ------   */
+
+
+#pagination { width:430px; position:relative; height:14px; padding:3px; padding-top:5px; margin:auto; bottom:25px; left:0px; word-spacing:20px; text-align:center; color:#828282; z-index:9999999999999; }
+ 
+#pagination a { padding:5px; background:; color:#828282; font-weight:bold; letter-spacing:5px; font-size:7px; border-radius:6px; }
+
+
+
+/*   ------   info / tags   ------   */
+
+
+
+#info { background:#efefef; width:auto; text-align:center; font-family:'trebuchet ms'; margin-top:0px; letter-spacing:1px; font-size:12px; font-style:none; padding:15px; line-height:10px; text-transform:uppercase; color:#6d6d6d; border-radius:6px; }
+   
+#info i { padding-right:20px; padding-left:20px; text-align:center; color:#b27772; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+   
+#info i:hover { -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; color:#828282; background:transparent; }
+
+#tags { padding: 15px; color:#828282; text-transform: none; font-style:none; font-size: 7.5px; text-align: center; letter-spacing: 1px; }
+
+#tags i { color:#b27772; }
+
+#tags a { padding-right: 5px; color: #b27772; }
+    
+#tags a:hover { color: #828282; background:transparent; }
+
+#notes { width:275px; }
+
+
+
+/*   ------   questions   ------   */
+
+
+
+#question { border-radius:10px 10px 0px 0px; color:#828282; padding:14px; font-family:'montserrat'; font-size:10px; font-weight:500; letter-spacing:.5px; text-align:center; margin-top:0px; text-transform:normal; line-height:16px; background-color:#f9f9f9; }
+
+#asker { font-size:12px; color:#ba8a86; padding:5px; background:#f9f9f9; width:auto; text-align:right; text-transform:uppercase; border-radius:0px 0px 10px 10px; }
+
+#asker a { color:#ba8a86; }
+
+#asker b { color:#ba8a86; }
+
+#asker i { color:#ba8a86; }
+
+
+
+/*   ------   music player   ------   */
+
+
+
+.audio { width:400px; padding-bottom:10px; background-color:; }
+   
+.audioinfo { background:#f9f9f9; width:298px; height:40px; text-align:center; margin-left:70px; padding:16px; color:#828282; text-transform:lowercase; border-radius:0px 10px 10px 0px; }
+ 
+.audioinfo b, strong, i, em { color:#b87f76; }
+ 
+.audioinfo h1 { text-align:center; font-size:20px; letter-spacing:0px; height:0px; font-weight:800; margin-top:10px; font-variant:none; text-transform:lowercase; color:; font-family:'montserrat';
+}
+ 
+.playerborderer { height:50px; width:50px; padding:15px; background:transparent; position:absolute;
+}
+ 
+.player { margin-top:-13px; margin-left:-13px; position:relative; text-align:center; width:6px; height:10px; overflow:hidden; padding:20px; background:transparent; opacity:.5; }
+ 
+.cover { border-radius:10px 0px 0px 10px; height:60px; width:60px; margin-right:10px; margin-top:0px; border:6px solid #ddd; }
+
+
+
+
+/*   ------   quote source   ------   */
+
+
+
+.qsource { text-align:center; }
+
+.qsource i, em { color:#828282; }
+
+
+
+/*   ------   huney   ------   */
+
+
+
+#huney  { position: absolute; color: white; background: #b27772; padding: 6px; width: 16px; border-radius: 50px; text-align: center; font-size: 12px; bottom: 10px; left: 10px;  display: block; position: fixed; }
+ 
+#huney a { color:#fff; font-weight:500; }
+
+#huney a:hover { background:transparent; }
+
+
+
+/*   ------   tab coding   ------   */
+
+
+
+ul.tab { position:absolute; overflow:hidden; list-style-type: none; margin: 0; padding: 0;  background-color: transparent; right:5px;  top:5px;  z-index:999999999; }
+ 
+ul.tab li { width: 20px; float:left; margin-left:2px; }
+ 
+ul.tab li a{ display:inline-block; color:#828282; font-size:11px; width:11px; height:11px; padding:3px; border-radius:100px;  }
+
+ul.tab li i{ color:#828282; }
+
+.close { position:absolute; top:2px; right:0px; font-weight:600; color:#828282; z-index:9999999; padding: 16px; width: 16px; border-radius: 50px; font-size:11px;text-align:center; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+.close:hover { cursor: pointer; color:#ba8a86; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+
+.tabcontent { overflow:hidden; display: none; height:375; width:360px; padding:0px; margin-left:292px; margin-top:0px; background-color:transparent; z-index:9999; -webkit-animation: fadeEffect 1s; animation: fadeEffect 1s; }
+ 
+.tabcontent.current{ display: inherit; -webkit-animation: fadeEffect 1s; animation: fadeEffect 1s; }
+ 
+@-webkit-keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
+ 
+@keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
+
+
+
+
+/*   ------   navtab cosmetics   ------   */
+
+
+
+
+#navtab { position:absolute;  right:0px; bottom:0px; width: 520px; padding-top:20px; height:390px; background-color:#f9f9f9; overflow:hidden; background-image:url(''); }
+
+#navtab i,em { color:bold; }
+
+#navtab h3 { background:; color:white; text-shadow:1px 1px 2px #bbb9b4; border-radius:50%; width:10px; height:10px; line-height:10px; padding:10px; text-align:center; display:inline-block; font-size:8px;margin:0px 10px 0px 0px; text-transform:uppercase; }
+
+#navtab h4 { background:; color:#b7b6ac; border-radius:50%; width:10px; height:10px; line-height:10px; padding:10px; text-align:center; display:inline-block; font-size:8px;margin:0px 10px 0px 0px; text-transform:uppercase; }
+
+
+
+/*   ------   navtab cosmetics 2.0   ------   */
+
+
+
+.tabtitle { font-family: 'germanica', cursive; width:400px; height:auto; position:absolute; font-weight:400; margin:20px 0px 0px 40px; font-size:80px; color:#b27772; line-height:70px; text-transform:lowercase; text-align:right; z-index:99999; text-shadow:4px 4px #efefef; }
+
+.tabdesc { font-family: 'montserrat'; width:290px; height:60px; overflow:auto; position:absolute; margin:175px 0px 0px 145px; font-size:6px; letter-spacing:2px; color:#828282; line-height:14px; text-transform:uppercase; text-align:justify; }
+
+.tabnav { position:absolute; text-align:center; padding:0px; width:100px; height:auto; margin:100px 0px 0px 35px; padding-top:0px; border-radius:8px; font-variant:small-caps; letter-spacing:1px; font-size:9px; z-index:99999999999999; }
+
+.tabnav a { background:#e4d5cf; color:#ba8a86; border-radius:6px; width:40px; height:20px; line-height:20px; padding:10px; text-align:center; display:inline-block; font-size:20px; margin:5px; text-transform:uppercase; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; z-index:99999999999999; }
+
+.tabnav i { color:bold }
+
+.tabnav i:hover { background:transparent; }
+ 
+.tabnav a:hover { color:#828282; background:#f9f9f9; -moz-transition-duration:0.3s; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; }
+
+
+
+/*   ------   end of css coding   ------   */
+
+
+
+</style><link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=st-nephalem%26postID=671810210393931776" /><link rel="alternate" href="ios-app://305343404/tumblr/x-callback-url/blog?blogName=st-nephalem&postID=671810210393931776" /><link rel="alternate" type="application/json+oembed" href="https://www.tumblr.com/oembed/1.0?url=https://st-nephalem.tumblr.com/post/671810210393931776/zombieheroine-the-real-writer-experience-is" title="zombieheroine:
+&ldquo;The real writer experience is standing in the shower and coming up with the most authentic dialogue with perfect phrasing and raw emotion in your head, then stepping out and drying your hair, putting on some clean pajamas and opening..."/><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/bookmania/stylesheet.css?v=1"><meta name="keywords" content="˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire,˚ &nbsp; g &nbsp;﹕ &nbsp;character study,˚ &nbsp; g &nbsp;﹕ &nbsp;ships,˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;alistair &nbsp; &nbsp;x &nbsp; &nbsp;avalon,˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;jinx leleux" /><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:title" content="𝐃𝐄𝐀𝐃𝐋𝐘 / 𝒹𝒶𝓎𝒹𝓇𝑒𝒶𝓂𝓈 " /><meta property="og:url" content="https://st-nephalem.tumblr.com/?og=1" /><meta property="og:description" content="look at me with love. or lust. or disgust. or hate. i don&#039;t care, but please . . . please just look..." /><meta property="og:type" content="tumblr-feed:tumblelog" /><meta property="og:image" content="https://64.media.tumblr.com/15860273f4e6961eea57e9a31d7da019/80aeef857eee22c1-07/s128x128u_c1/56207d8cd4d499e271116b0721a88146c34895de.pnj" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=st-nephalem" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=st-nephalem" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="st-nephalem" /><meta name="twitter:title" content="st-nephalem" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=st-nephalem&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=st-nephalem&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=st-nephalem&amp;referrer=twitter-cards" /><!-- GOOGLE CAROUSEL --><script type="application/ld+json">
+	{"@type":"ItemList","url":"https:\/\/st-nephalem.tumblr.com","itemListElement":[{"@type":"ListItem","position":1,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671903465040134144\/she-seemed-fragile-like-a-moonflower-destined-to"},{"@type":"ListItem","position":2,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671900826791493632"},{"@type":"ListItem","position":3,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671898034296307712\/timotaychalamet-ladies-and-gentlemen-the"},{"@type":"ListItem","position":4,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671895398680559616"},{"@type":"ListItem","position":5,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671892758099804160"},{"@type":"ListItem","position":6,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671889986848735232\/lupinsremus-buzzfeed-unsolved-a-summary"},{"@type":"ListItem","position":7,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671887339866488832"},{"@type":"ListItem","position":8,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671884729086361600"},{"@type":"ListItem","position":9,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671882083665428480"},{"@type":"ListItem","position":10,"url":"https:\/\/st-nephalem.tumblr.com\/post\/671810210393931776\/zombieheroine-the-real-writer-experience-is"}],"@context":"http:\/\/schema.org"}</script><link rel="canonical" href="https://st-nephalem.tumblr.com" /></head><body>
+
+
+
+<!------    begin html coding    ------>
+
+
+
+<div id="contain">
+
+<div id="sidebar">
+
+<img src="https://64.media.tumblr.com/06c528708932149827f3335fb625b620/80aeef857eee22c1-1a/s2048x3072/76f7bcf1ca2845d2c0e51056737918d9d87b2bbf.gif">
+<div class="title">
+samu</div>
+<div class="subtitle">
+<b>warning</b> what you are about to witness will <b>disturb</b> you . even <i>shock you</i> . there is a dark side of humanity that censors won't let you see . . . <i>but we will</i> . <u>view at your own risk</u> .
+</div>
+<div class="sidelink">
+<a href="/" title="refresh"><i class="pe-7s-power"></i></a><br>
+<a href="/ask" rel="02" class="poplight" title="message"><i class="pe-7s-paper-plane"></i></a><br>
+<a href="#" class="tablinks" onclick="openCity(event, 'navtab')" title="navigate"><i class="pe-7s-more"></i></a>
+</div>
+<div class="desc">a burnt child loves the fire .</div>
+</div>
+
+
+
+
+<!------    navigation tab   ------>
+ 
+ 
+ 
+<div id="navtab" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="close"> x </span>
+
+<div class="tabtitle">
+hereafter
+</div>
+
+<div class="tabdesc">
+look at me with <b>love</b>. or lust. or <i>disgust</i>. or hate. i don't care, but please . . . <u>please just look at me</u> . . . . .
+she / they. 23. <i>i write now and then.</i>
+</div>
+
+<div class="tabnav">
+<a href="https://st-nephalem.tumblr.com/" title="home"><i class="pe-7s-bandaid"></i></a>
+<a href="https://st-nephalem.tumblr.com/tagged/m.%20%C2%A0:%20%C2%A0character%20study" title="musings"><i class="pe-7s-moon"></i></a>
+<a href="https://st-nephalem.tumblr.com/tagged/m.%20%C2%A0:%20%C2%A0ships" title="ships"><i class="pe-7s-sun"></i></a>
+<a href="https://st-nephalem.tumblr.com/tagged/misc.%20%C2%A0:%20%C2%A0soulmate" title="soulmate tag"><i class="pe-7s-cloud"></i></a>
+<a href="/" title="atlas"><i class="pe-7s-gleam"></i></a>
+</div>
+
+<img src="https://64.media.tumblr.com/641846c341922f04363bb3904ece2384/80aeef857eee22c1-11/s2048x3072/7a2d9cbca8de1633334dd3685f825366e0af0812.gif" style="position:absolute; margin:242px 0px 0px 140px; width:300px; height:100px; border-radius:6px;">
+
+</div>
+
+
+
+<div id="entries">
+
+<!--  -->
+
+<div id="post">
+ 
+
+ 
+
+ 
+
+ 
+<h2>She seemed fragile like a moonflower – destined to bloom for a single lovely night, and then to fade and fall.</h2><br>
+<div class="qsource"> — Juliet Marillier, Wildwood Dancing&nbsp;&nbsp; (via <a href="https://paper-fairy.tumblr.com/" class="tumblr_blog">paper-fairy</a>)</div>
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671903465040134144/she-seemed-fragile-like-a-moonflower-destined-to" title="16 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671903465040134144/she-seemed-fragile-like-a-moonflower-destined-to" title="5,835 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://stevenyuens.tumblr.com/post/630894878953472000/she-seemed-fragile-like-a-moonflower-destined-to" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671903465040134144/sQnGWTiY" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;character study">˚ &nbsp; g &nbsp;﹕ &nbsp;character study</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;glenda nam">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;glenda nam</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+
+<p><a class="tumblr_blog" href="https://anhedxnic-deactivated20201002.tumblr.com/post/626916349622517760/i-am-the-worst-person-i-know-i-am-better-than">anhedxnic-deactivated20201002</a>:</p><blockquote><p>i am the worst person i know. i am better than everyone else. i hate myself. i am god &lt;3 </p></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671900826791493632" title="17 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671900826791493632" title="39,313 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://engjellberisha.tumblr.com/post/668408878347747328" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671900826791493632/iEwutvy9" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;character study">˚ &nbsp; g &nbsp;﹕ &nbsp;character study</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+ 
+
+ 
+<center><div id="photoset_671898034296307712" class="html_photoset">    <iframe
+                id="photoset_iframe_671898034296307712" name="photoset_iframe_671898034296307712"
+                class="photoset" scrolling="no" frameborder="0"
+                height="-10" width="100%" style="border:0; background-color:transparent; overflow:hidden;" src="/post/671898034296307712/photoset_iframe/st-nephalem/tumblr_qt3p365xo71u8n0xa/0/false"
+                onload="var els = this.contentWindow.document.getElementsByClassName('photoset');if (els.length) this.style.height = els[0].getBoundingClientRect().height + 'px';"
+            ></iframe></div></center><p><a href="https://timotaychalamet.tumblr.com/post/651167712257703936/ladies-and-gentlemen-the-fabulous-stains-1982" class="tumblr_blog">timotaychalamet</a>:</p><blockquote><p><i>Ladies and Gentlemen, the Fabulous Stains (1982) dir. Lou Adler</i></p></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671898034296307712/timotaychalamet-ladies-and-gentlemen-the" title="18 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671898034296307712/timotaychalamet-ladies-and-gentlemen-the" title="600 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://hcneybunnny.tumblr.com/post/671834173397483520/timotaychalamet-ladies-and-gentlemen-the" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671898034296307712/uwrPkCKH" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;character study">˚ &nbsp; g &nbsp;﹕ &nbsp;character study</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;saffron debroux">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;saffron debroux</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;sylvian gioeli">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;sylvian gioeli</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+
+<p><a class="tumblr_blog" href="https://systemicinsomnia.tumblr.com/post/671208202121134080/we-could-be-covered-in-blood-together-if-you">systemicinsomnia</a>:</p><blockquote><p>we could be covered in blood together if you stopped playing hard to get </p></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671895398680559616" title="18 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671895398680559616" title="38,286 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://museinspo.tumblr.com/post/671787453842063360" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671895398680559616/7Ur7OJe3" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; wanted &nbsp; ﹕ &nbsp;dynamic">˚ &nbsp; ✨ &nbsp; wanted &nbsp; ﹕ &nbsp;dynamic</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;ships">˚ &nbsp; g &nbsp;﹕ &nbsp;ships</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; n &nbsp;﹕ &nbsp;partners in crime">˚ &nbsp; n &nbsp;﹕ &nbsp;partners in crime</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+
+<p><a class="tumblr_blog" href="https://logarto.tumblr.com/post/671835980628656128/meow-btw-if-you-even-care">logarto</a>:</p><blockquote><p>meow btw. if you even care.</p></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671892758099804160" title="19 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671892758099804160" title="24,872 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://smokeinherperfume.tumblr.com/post/671851614688165888" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671892758099804160/feusfoEj" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/lol">lol</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+ 
+
+ 
+<center><div id="photoset_671889986848735232" class="html_photoset">    <iframe
+                id="photoset_iframe_671889986848735232" name="photoset_iframe_671889986848735232"
+                class="photoset" scrolling="no" frameborder="0"
+                height="-10" width="100%" style="border:0; background-color:transparent; overflow:hidden;" src="/post/671889986848735232/photoset_iframe/st-nephalem/tumblr_qd3d07IaT31xyoxeb/0/false"
+                onload="var els = this.contentWindow.document.getElementsByClassName('photoset');if (els.length) this.style.height = els[0].getBoundingClientRect().height + 'px';"
+            ></iframe></div></center><p><a href="https://lupinsremus.tumblr.com/post/622972012207423488/buzzfeed-unsolved-a-summary" class="tumblr_blog">lupinsremus</a>:</p><blockquote><blockquote><p><i><b>buzzfeed unsolved</b>: a summary</i></p></blockquote></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671889986848735232/lupinsremus-buzzfeed-unsolved-a-summary" title="20 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671889986848735232/lupinsremus-buzzfeed-unsolved-a-summary" title="9,555 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://anyattaylorjoy.tumblr.com/post/640059948088311808/lupinsremus-buzzfeed-unsolved-a-summary" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671889986848735232/LM5VISqb" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;ships">˚ &nbsp; g &nbsp;﹕ &nbsp;ships</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;brotp">˚ &nbsp; g &nbsp;﹕ &nbsp;brotp</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;calypso &nbsp; &nbsp;x &nbsp; &nbsp;stevie">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;calypso &nbsp; &nbsp;x &nbsp; &nbsp;stevie</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;griffin &nbsp; &nbsp;x &nbsp; &nbsp;olive">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;griffin &nbsp; &nbsp;x &nbsp; &nbsp;olive</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;xaphan &nbsp; &nbsp;x &nbsp; &nbsp;nero">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;xaphan &nbsp; &nbsp;x &nbsp; &nbsp;nero</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+ 
+
+ 
+<center><div id="photoset_671887339866488832" class="html_photoset">    <iframe
+                id="photoset_iframe_671887339866488832" name="photoset_iframe_671887339866488832"
+                class="photoset" scrolling="no" frameborder="0"
+                height="-5" width="100%" style="border:0; background-color:transparent; overflow:hidden;" src="/post/671887339866488832/photoset_iframe/st-nephalem/tumblr_pay11eCI2E1wnifzo/0/false"
+                onload="var els = this.contentWindow.document.getElementsByClassName('photoset');if (els.length) this.style.height = els[0].getBoundingClientRect().height + 'px';"
+            ></iframe></div></center>
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671887339866488832" title="21 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671887339866488832" title="5,114 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://musingshd.tumblr.com/post/640291207048822784" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671887339866488832/1GX0znaF" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;ships">˚ &nbsp; g &nbsp;﹕ &nbsp;ships</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;alistair &nbsp; &nbsp;x &nbsp; &nbsp;avalon">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;alistair &nbsp; &nbsp;x &nbsp; &nbsp;avalon</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+ 
+
+ 
+<center><div id="photoset_671884729086361600" class="html_photoset">    <iframe
+                id="photoset_iframe_671884729086361600" name="photoset_iframe_671884729086361600"
+                class="photoset" scrolling="no" frameborder="0"
+                height="-5" width="100%" style="border:0; background-color:transparent; overflow:hidden;" src="/post/671884729086361600/photoset_iframe/st-nephalem/tumblr_q1y8rqdPij1xmlzbd/0/false"
+                onload="var els = this.contentWindow.document.getElementsByClassName('photoset');if (els.length) this.style.height = els[0].getBoundingClientRect().height + 'px';"
+            ></iframe></div></center>
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671884729086361600" title="21 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671884729086361600" title="9,411 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://stan-rps.tumblr.com/post/625468497501257728" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671884729086361600/Qtgd69tn" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;character study">˚ &nbsp; g &nbsp;﹕ &nbsp;character study</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;aesthetic">˚ &nbsp; g &nbsp;﹕ &nbsp;aesthetic</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis">˚ &nbsp; ✨ &nbsp; ch &nbsp; ﹕ &nbsp;griffin angelis</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+
+<p><a class="tumblr_blog" href="https://vokere.tumblr.com/post/190059740520">vokere</a>:</p><blockquote><figure class="tmblr-full"><a class="post_media_photo_anchor" data-big-photo="https://64.media.tumblr.com/07280bae576d10cace01714763a84919/129bea718d3c3d6d-15/s1280x1920/dd0f5857bc2ad29ff45e8dae452a5ed55cace37a.gifv" data-big-photo-height="208" data-big-photo-width="540"><img class="post_media_photo image" src="https://64.media.tumblr.com/07280bae576d10cace01714763a84919/129bea718d3c3d6d-15/s500x750/e86274f01ac8d07f4ba502e43720dcb0b624f784.gifv" alt="image"></a></figure><figure class="tmblr-full"><a class="post_media_photo_anchor" data-big-photo="https://64.media.tumblr.com/1cff0b183dbd1121cfc96e4a6e91f0ce/129bea718d3c3d6d-b7/s1280x1920/be1c2999056758dccc051f77d82b85dd393f912a.gifv" data-big-photo-height="208" data-big-photo-width="540"><img class="post_media_photo image" src="https://64.media.tumblr.com/1cff0b183dbd1121cfc96e4a6e91f0ce/129bea718d3c3d6d-b7/s500x750/fbe8c2737115c5026b14ccadab6bfd914f9b54db.gifv" alt="image"></a></figure></blockquote>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671882083665428480" title="22 hours ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671882083665428480" title="24,583 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://marjcrie.tumblr.com/post/642987806352982016" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671882083665428480/0RDH2c8R" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; g &nbsp;﹕ &nbsp;ships">˚ &nbsp; g &nbsp;﹕ &nbsp;ships</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;alistair &nbsp; &nbsp;x &nbsp; &nbsp;avalon">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;alistair &nbsp; &nbsp;x &nbsp; &nbsp;avalon</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;axel &nbsp; &nbsp;x &nbsp; &nbsp;anaya">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;axel &nbsp; &nbsp;x &nbsp; &nbsp;anaya</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;griffin &nbsp; &nbsp;x &nbsp; &nbsp;jade">˚ &nbsp; ✨ &nbsp; filed &nbsp; ﹕ &nbsp;griffin &nbsp; &nbsp;x &nbsp; &nbsp;jade</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<!--  -->
+
+<div id="post">
+ 
+
+
+<p><a href="http://zombieheroine.tumblr.com/post/171323060342/the-real-writer-experience-is-standing-in-the" class="tumblr_blog">zombieheroine</a>:</p><blockquote><p>The real writer experience is standing in the shower and coming up with the most authentic dialogue with perfect phrasing and raw emotion in your head, then stepping out and drying your hair, putting on some clean pajamas and opening a word document to write down all your perfect ideas only to realize everything has evaporated.&nbsp;</p></blockquote><p><a class="tumblelog" href="https://tmblr.co/m_5QFfoLV3m3rsUDEHjyZyQ">@noxmortem</a></p>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+<br>
+ 
+
+ 
+
+   
+<div id="info">
+<a href="https://st-nephalem.tumblr.com/post/671810210393931776/zombieheroine-the-real-writer-experience-is" title="1 day ago"><i class="pe-7s-clock"></i></a> 
+<a href="https://st-nephalem.tumblr.com/post/671810210393931776/zombieheroine-the-real-writer-experience-is" title="319,506 notes"><i class="pe-7s-ribbon"></i></a>
+
+<a href="https://sorcerry.tumblr.com/post/671645833040625664/zombieheroine-the-real-writer-experience-is" title="via"><i class="pe-7s-back"></i></a>
+
+
+<a href="https://www.tumblr.com/reblog/st-nephalem/671810210393931776/z1mMJ9M0" target="_blank" class="details" title="reblog"><i class="pe-7s-refresh"></i></a></div>
+<div id="tags">
+ 
+<i class=""></i> <a href="/tagged/˚ &nbsp; m &nbsp;﹕ &nbsp;about me">˚ &nbsp; m &nbsp;﹕ &nbsp;about me</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/facts">facts</a>&nbsp;&nbsp;<i class=""></i> <a href="/tagged/˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire">˚ &nbsp; q &nbsp;﹕ &nbsp;a burnt child loves the fire</a>&nbsp;&nbsp;
+</div>
+</div>
+
+<br><br>
+
+    
+<div id="pagination"> <a href="/page/2">NEXT</a><br /></div>
+
+</div></div>
+</div>
+   
+<div id="huney"><a href="https://redjamies.tumblr.com" title="code by ally">♡</a></div>
+</div>
+
+
+
+<!-- begin scripts ————— DO NOT DELETE! -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $('.video iframe').each(function(){
+       var scale = $(this).parents('.video').width() / 400;
+       $(this).attr({
+           width: Math.floor($(this).attr('width') * scale),
+           height: Math.floor($(this).attr('height') * scale)
+       });
+   });
+});
+</script>
+
+<!-- TABS/ALL-INN-ONE SCRIPTS DO NOT REMOVE!!! -->
+
+<script>
+$(document).ready(function() {
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).fadeIn(600).siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    // fetch the class of the clicked item
+    var ourClass = $(this).attr('class');
+
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    // update the active state on our clicked button
+    $(this).parent().addClass('active');
+
+    if(ourClass == 'all') {
+      // show all our items
+      $('#ourHolder').children('div.item').show();
+    }
+    else {
+      // hide all elements that don't share ourClass
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      // show all elements that do share ourClass
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+       
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              "https://st-nephalem.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/?route=%2F'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="pK3mbsaCDDhQgm2kzQTVSKvMQ">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1640837563&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3N0LW5lcGhhbGVtLnR1bWJsci5jb20vIiwicmVxdHlwZSI6MCwicm91dGUiOiIvIn0=&U=EHLMEPFJCM&K=d2b5aec7dc33a43c6e769dd7dce1e0ed2ed71fdd2d9136edf696b22acaaa9bb3&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1640837563&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL3N0LW5lcGhhbGVtLnR1bWJsci5jb20vIiwicmVxdHlwZSI6MCwicm91dGUiOiIvIiwibm9zY3JpcHQiOjF9&U=EHLMEPFJCM&K=842512e00b134d1068a2444137b270d3c28b4069113c41b22cc9b628aa5362d8&R="></noscript><script type="text/javascript" nonce="pK3mbsaCDDhQgm2kzQTVSKvMQ">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1640837563&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9zdC1uZXBoYWxlbS50dW1ibHIuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyIsInBvc3RzIjpbeyJyb290X2Jsb2dpZCI6MTkyNDE3Miwicm9vdF9wb3N0aWQiOiIzODgxODg2ODc4MSIsInBvc3RpZCI6IjY3MTkwMzQ2NTA0MDEzNDE0NCIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjo0OTYwOTIxNTQsInJvb3RfcG9zdGlkIjoiNjI2OTE2MzQ5NjIyNTE3NzYwIiwicG9zdGlkIjoiNjcxOTAwODI2NzkxNDkzNjMyIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjIxODYxMTU1OSwicm9vdF9wb3N0aWQiOiI2NTExNjc3MTIyNTc3MDM5MzYiLCJwb3N0aWQiOiI2NzE4OTgwMzQyOTYzMDc3MTIiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6NDk0NjE4Njg0LCJyb290X3Bvc3RpZCI6IjY3MTIwODIwMjEyMTEzNDA4MCIsInBvc3RpZCI6IjY3MTg5NTM5ODY4MDU1OTYxNiIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjoxMDA1MDM3MDcsInJvb3RfcG9zdGlkIjoiNjcxODM1OTgwNjI4NjU2MTI4IiwicG9zdGlkIjoiNjcxODkyNzU4MDk5ODA0MTYwIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjQyMTkxNzkyNCwicm9vdF9wb3N0aWQiOiI2MjI5NzIwMTIyMDc0MjM0ODgiLCJwb3N0aWQiOiI2NzE4ODk5ODY4NDg3MzUyMzIiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6MzQzOTE5MjY3LCJyb290X3Bvc3RpZCI6IjE3NTI4MDEzMTgwMSIsInBvc3RpZCI6IjY3MTg4NzMzOTg2NjQ4ODgzMiIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjo0NDY1MDgxMjIsInJvb3RfcG9zdGlkIjoiMTg5NDU1NTI0NDUyIiwicG9zdGlkIjoiNjcxODg0NzI5MDg2MzYxNjAwIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjM4NjI1NTIwNywicm9vdF9wb3N0aWQiOiIxOTAwNTk3NDA1MjAiLCJwb3N0aWQiOiI2NzE4ODIwODM2NjU0Mjg0ODAiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6NDk5NjkxMjksInJvb3RfcG9zdGlkIjoiMTcxMzIzMDYwMzQyIiwicG9zdGlkIjoiNjcxODEwMjEwMzkzOTMxNzc2IiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9XX0=&U=LDHGFBJNDG&K=b014258f761b5ea28f0b2776ff9c1b52c4c10d5b25553d42f8fa49559cad0161&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1640837563&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6Ly9zdC1uZXBoYWxlbS50dW1ibHIuY29tLyIsInJlcXR5cGUiOjAsInJvdXRlIjoiLyIsInBvc3RzIjpbeyJyb290X2Jsb2dpZCI6MTkyNDE3Miwicm9vdF9wb3N0aWQiOiIzODgxODg2ODc4MSIsInBvc3RpZCI6IjY3MTkwMzQ2NTA0MDEzNDE0NCIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjo0OTYwOTIxNTQsInJvb3RfcG9zdGlkIjoiNjI2OTE2MzQ5NjIyNTE3NzYwIiwicG9zdGlkIjoiNjcxOTAwODI2NzkxNDkzNjMyIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjIxODYxMTU1OSwicm9vdF9wb3N0aWQiOiI2NTExNjc3MTIyNTc3MDM5MzYiLCJwb3N0aWQiOiI2NzE4OTgwMzQyOTYzMDc3MTIiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6NDk0NjE4Njg0LCJyb290X3Bvc3RpZCI6IjY3MTIwODIwMjEyMTEzNDA4MCIsInBvc3RpZCI6IjY3MTg5NTM5ODY4MDU1OTYxNiIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjoxMDA1MDM3MDcsInJvb3RfcG9zdGlkIjoiNjcxODM1OTgwNjI4NjU2MTI4IiwicG9zdGlkIjoiNjcxODkyNzU4MDk5ODA0MTYwIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjQyMTkxNzkyNCwicm9vdF9wb3N0aWQiOiI2MjI5NzIwMTIyMDc0MjM0ODgiLCJwb3N0aWQiOiI2NzE4ODk5ODY4NDg3MzUyMzIiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6MzQzOTE5MjY3LCJyb290X3Bvc3RpZCI6IjE3NTI4MDEzMTgwMSIsInBvc3RpZCI6IjY3MTg4NzMzOTg2NjQ4ODgzMiIsImJsb2dpZCI6NDYwNjUxNTk3LCJzb3VyY2UiOjMzfSx7InJvb3RfYmxvZ2lkIjo0NDY1MDgxMjIsInJvb3RfcG9zdGlkIjoiMTg5NDU1NTI0NDUyIiwicG9zdGlkIjoiNjcxODg0NzI5MDg2MzYxNjAwIiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9LHsicm9vdF9ibG9naWQiOjM4NjI1NTIwNywicm9vdF9wb3N0aWQiOiIxOTAwNTk3NDA1MjAiLCJwb3N0aWQiOiI2NzE4ODIwODM2NjU0Mjg0ODAiLCJibG9naWQiOjQ2MDY1MTU5Nywic291cmNlIjozM30seyJyb290X2Jsb2dpZCI6NDk5NjkxMjksInJvb3RfcG9zdGlkIjoiMTcxMzIzMDYwMzQyIiwicG9zdGlkIjoiNjcxODEwMjEwMzkzOTMxNzc2IiwiYmxvZ2lkIjo0NjA2NTE1OTcsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=LDHGFBJNDG&K=023a590e2194ed33e1f0a8a39cd4b8eda65ddaa4bf0731b5d17b1b5680ed7eb3&R="></noscript><noscript id="bootloader" data-bootstrap="{&quot;Components&quot;:{&quot;PostActivity&quot;:[],&quot;NotificationPoller&quot;:{&quot;messaging_keys&quot;:[],&quot;token&quot;:&quot;c86f8a500596474a7ef5034081f694bd&quot;,&quot;inbox_unread&quot;:0},&quot;DesktopDashboardLogo&quot;:{&quot;animations&quot;:[[&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1.png?_v=161861acded461bb6e995593a3bae835&quot;,&quot;https:\/\/assets.tumblr.com\/images\/logo\/hover-animations\/1@2x.png?_v=496a774637302a598c851381d00009b0&quot;]]},&quot;TumblelogIframe&quot;:{&quot;unified&quot;:true,&quot;variant&quot;:null,&quot;isCompact&quot;:true,&quot;tumblelogBundleSrc&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/standalone\/tumblelog\/index.build.js?_v=3adb836a96eddc27a1180d62826b0901&quot;,&quot;tumblelogName&quot;:&quot;st-nephalem&quot;,&quot;isLoggedIn&quot;:false,&quot;isFriend&quot;:false,&quot;formKey&quot;:&quot;&quot;,&quot;canSubscribe&quot;:false,&quot;isSubscribed&quot;:false,&quot;tumblelogTitle&quot;:&quot;\ud835\udc03\ud835\udc04\ud835\udc00\ud835\udc03\ud835\udc0b\ud835\udc18 \/ \ud835\udcb9\ud835\udcb6\ud835\udcce\ud835\udcb9\ud835\udcc7\ud835\udc52\ud835\udcb6\ud835\udcc2\ud835\udcc8 &quot;,&quot;tumblelogAvatar&quot;:&quot;https:\/\/64.media.tumblr.com\/15860273f4e6961eea57e9a31d7da019\/80aeef857eee22c1-07\/s64x64u_c1\/a4b25d8296a7a0a213ece6fcd370354dde113f9b.pnj&quot;,&quot;tumblelogAvatar128&quot;:&quot;https:\/\/64.media.tumblr.com\/15860273f4e6961eea57e9a31d7da019\/80aeef857eee22c1-07\/s128x128u_c1\/56207d8cd4d499e271116b0721a88146c34895de.pnj&quot;,&quot;tumblelogHost&quot;:&quot;https:\/\/st-nephalem.tumblr.com&quot;,&quot;isOptica&quot;:false,&quot;isCustomTheme&quot;:true,&quot;themeHeaderImage&quot;:&quot;https:\/\/64.media.tumblr.com\/99136fe732e9b025ad0b8cae43181ff1\/80aeef857eee22c1-78\/s2048x3072_c0,0,59297,100000\/f23e877877ebe93bd1b22e46dc1eee0bf0b5e9de.png&quot;,&quot;themeBackgroundColor&quot;:&quot;#bfb4b1&quot;,&quot;themeTitleColor&quot;:&quot;#DDDDDD&quot;,&quot;themeAccentColor&quot;:&quot;#bfb4b1&quot;,&quot;brag&quot;:true,&quot;adsEnabled&quot;:false,&quot;canShowAd&quot;:true,&quot;isPremium&quot;:false,&quot;showLrecAds&quot;:false,&quot;showStickyLrecBackfill&quot;:false,&quot;showGeminiAds&quot;:false,&quot;geminiSectionCodeDesktop&quot;:&quot;a10bca9c-0c5d-4a02-ab13-14ab8513d81d&quot;,&quot;geminiSectionCodeMobile&quot;:&quot;ced63809-b609-4aca-96a0-abc099acba6b&quot;,&quot;currentPageType&quot;:&quot;blog&quot;,&quot;currentPage&quot;:1,&quot;searchQuery&quot;:&quot;&quot;,&quot;tag&quot;:&quot;&quot;,&quot;query&quot;:&quot;&quot;,&quot;chrono&quot;:false,&quot;postId&quot;:&quot;&quot;,&quot;src&quot;:&quot;https:\/\/st-nephalem.tumblr.com\/&quot;,&quot;postUrl&quot;:&quot;&quot;,&quot;isBlocked&quot;:null,&quot;isAdmin&quot;:false,&quot;lookupButtonUrl&quot;:&quot;&quot;,&quot;showSpamButton&quot;:false,&quot;showRootPostButton&quot;:false,&quot;rootPostUrl&quot;:&quot;&quot;,&quot;showRadarPostButton&quot;:false,&quot;radarKeys&quot;:&quot;&quot;,&quot;isUniblocked&quot;:false,&quot;isNsfw&quot;:false,&quot;isAdult&quot;:false,&quot;isSpam&quot;:false,&quot;isPrimaryBlog&quot;:false,&quot;canEdit&quot;:false,&quot;canReblogSelf&quot;:false,&quot;showLikeButton&quot;:false,&quot;showReblogButton&quot;:false,&quot;reblogUrl&quot;:&quot;&quot;,&quot;showMessagingButton&quot;:false,&quot;loginCheckIframeSrc&quot;:&quot;https:\/\/assets.tumblr.com\/assets\/html\/iframe\/login_check.html?_v=3de94a184d600617102ddd5b48fb36e9&quot;,&quot;appInstallUrls&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_continue_or_install_cta&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_continue_or_install_cta\u0026mt=8&quot;},&quot;appOpenReferrer&quot;:&quot;bn_header_open_btn&quot;,&quot;isShowSearch&quot;:true,&quot;supplyLogging&quot;:[],&quot;secondsSinceLastActivity&quot;:3599,&quot;installUrlOpenFailed&quot;:{&quot;android&quot;:&quot;https:\/\/play.google.com\/store\/apps\/details?id=com.tumblr\u0026referrer=utm_source%3Dtumblr%26utm_medium%3Diframe%26utm_campaign%3Dbn_header_app_open_failed&quot;,&quot;ios&quot;:&quot;https:\/\/apps.apple.com\/app\/apple-store\/id305343404?pt=212308\u0026ct=bn_header_app_open_failed\u0026mt=8&quot;},&quot;loginWallVariant&quot;:&quot;small_center&quot;}},&quot;Flags&quot;:{&quot;features&quot;:&quot;eyJmaWx0ZXJfbnNmdyI6dHJ1ZSwibW9iaWxlX3dlYl9nYXRlIjp0cnVlLCJzYWZlX21vZGUiOnRydWUsInNhZmVfbW9kZV9lbmFibGVkIjp0cnVlLCJrZXljb21tYW5kX2F1dG9fcGFnaW5hdGUiOnRydWUsImxvZ2dlZF9vdXRfc2VhcmNoIjp0cnVlLCJrcmFrZW5fd2ViX2xvZ2dpbmdfbGlicmFyeSI6dHJ1ZSwibGl2ZXBob3Rvc193ZWIiOnRydWUsInVzZXJfdGFnX2ZpbHRlcmluZyI6dHJ1ZSwic2FmZV9tb2RlX293bl9wb3N0Ijp0cnVlLCJwcm9qZWN0X3hfYXBwZWFsIjp0cnVlLCJtb2JpbGVfd2ViX3Bob3Rvc2V0cyI6dHJ1ZSwiaGlkZV9kZWZhdWx0X2hlYWRlcnNfYmxvZ19jYXJkcyI6dHJ1ZSwibm90aWZpY2F0aW9uX3JlcGx5X2xpbmtfdG9fbm90ZXMiOnRydWUsInR5cGluZ19pbmRpY2F0b3Jfd3JpdGUiOnRydWUsInR1bWJscl92aWRlb19zcG9uc29yZWRfZGF5Ijp0cnVlLCJjYXB0Y2hhOnVzZV9yZWNhcHRjaGEyIjp0cnVlLCJsaXR0bGVfc2lzdGVyIjp0cnVlLCJsb2dfbGFkeSI6dHJ1ZSwicmVkcG9wX3Bvc3RfZm9ybV9tb2JpbGVfY3JlYXRlIjp0cnVlLCJsZWdhY3lfcG9zdF9mb3JtX2J1dHRvbnNfbGlua190b19yZWRwb3AiOnRydWUsInNob3dfdHNwX2NsaWNrX3Rocm91Z2hfdG9nZ2xlIjp0cnVlLCJkYXJsYV9hZF9mZWVkYmFjayI6dHJ1ZSwic3RhdHVzX2luZGljYXRvciI6dHJ1ZSwiY29udmVyc2F0aW9uYWxfbm90aWZpY2F0aW9ucyI6dHJ1ZSwiZGlzYWJsZV95YWhvb19iX2Nvb2tpZSI6dHJ1ZSwibGl2ZXBob3RvcyI6dHJ1ZX0=&quot;},&quot;Context&quot;:{&quot;name&quot;:&quot;default&quot;,&quot;time&quot;:1640837563000,&quot;userinfo&quot;:{&quot;primary&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;channels&quot;:[]},&quot;hosts&quot;:{&quot;assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;secure_assets_host&quot;:&quot;https:\/\/assets.tumblr.com&quot;,&quot;www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;secure_www_host&quot;:&quot;https:\/\/www.tumblr.com&quot;,&quot;embed_host&quot;:&quot;https:\/\/embed.tumblr.com&quot;,&quot;safe_host&quot;:&quot;https:\/\/safe.txmblr.com&quot;,&quot;platform_host&quot;:&quot;https:\/\/platform.tumblr.com&quot;},&quot;language&quot;:&quot;es_ES&quot;,&quot;language_simple&quot;:&quot;es&quot;,&quot;assets&quot;:&quot;https:\/\/assets.tumblr.com\/client\/prod\/&quot;},&quot;Translations&quot;:{&quot;Cancel&quot;:&quot;Cancelar&quot;,&quot;Nevermind&quot;:&quot;Cancelar&quot;,&quot;Ignore&quot;:&quot;Ignorar&quot;,&quot;Unfollow&quot;:&quot;Dejar de seguir&quot;,&quot;Are you sure you want to unfollow %1$s?&quot;:&quot;\u00bfSeguro que quieres dejar de seguir a %1$s?&quot;,&quot;Sorry, we seem to be having technical trouble.  Please try again later.&quot;:&quot;Lo sentimos, parece que estamos experimentando problemas t\u00e9cnicos. Vuelve a intentarlo m\u00e1s tarde.&quot;,&quot;Follow&quot;:&quot;Seguir&quot;,&quot;Follow %1$s&quot;:&quot;Seguir a %1$s&quot;,&quot;Put it back&quot;:&quot;Vuelve a tu sitio&quot;,&quot;See all&quot;:&quot;Ver todas&quot;,&quot;Block&quot;:&quot;Bloquear&quot;,&quot;%1$sAre you sure you want to block %2$s from %3$s?%4$sThey won&#039;t be able to follow %3$s, send %3$s messages, see %3$s in search results, or interact with any of %3$s&#039;s posts.%5$s&quot;:&quot;%1$s\u00bfSeguro que quieres bloquear a %2$s de %3$s?%4$sNo podr\u00e1 seguir a %3$s, enviar mensajes a %3$s, ver a %3$s en los resultados de b\u00fasqueda o interactuar de forma alguna con las publicaciones de %3$s.%5$s&quot;,&quot;%1$sBlock messages from this sender?%2$sAny further messages sent from their IP address will be blocked from your inbox. This can&#039;t be undone, by the way.%3$s&quot;:&quot;\u00bf%1$sQuieres bloquear los mensajes de este remitente?%2$sDejar\u00e1s de recibir mensajes enviados desde su misma direcci\u00f3n IP en tu bandeja de entrada. No olvides que no es posible deshacer este cambio.%3$s&quot;,&quot;Okay! We&#039;ll review the status of this and email you when we&#039;re done.&quot;:&quot;\u00a1Perfecto! Analizaremos el caso y te enviaremos un correo electr\u00f3nico cuando el proceso haya terminado.&quot;,&quot;This is marked as sensitive content. If that seems like a mistake, you can request a review.&quot;:&quot;Esta publicaci\u00f3n est\u00e1 marcada como contenido delicado. Si crees que se trata de un error, puedes pedirnos que la revisemos.&quot;,&quot;Request Review&quot;:&quot;Solicitar revisi\u00f3n&quot;,&quot;This post is still marked as sensitive, but is currently being reviewed.&quot;:&quot;Esta publicaci\u00f3n sigue marcada como contenido delicado, pero la estamos revisando.&quot;,&quot;After review, it was determined that this post contains sensitive content.&quot;:&quot;Tras revisarlo, hemos corroborado que el contenido de esta publicaci\u00f3n puede ser delicado.&quot;,&quot;This is marked as %1$ssensitive%2$s&quot;:&quot;Esta publicaci\u00f3n incluye %1$scontenido delicado%2$s&quot;,&quot;This Tumblr may contain sensitive media.&quot;:&quot;El contenido de este Tumblr puede ser delicado.&quot;,&quot;Sensitive posts are hidden. If you want to change that, disable Safe Mode in your settings.&quot;:&quot;Las publicaciones con contenidos que pueden resultar delicados est\u00e1n ocultas. Para mostrarlas, desactiva el modo seguro en el apartado de configuraci\u00f3n.&quot;,&quot;Hey, this post may contain adult content, so we&#039;ve hidden it from public view.&quot;:&quot;Vaya... Es posible que esta publicaci\u00f3n incluya contenido para adultos y, por eso, la hemos ocultado.&quot;,&quot;Learn more&quot;:&quot;M\u00e1s informaci\u00f3n&quot;,&quot;%1$sLearn more%2$s&quot;:&quot;%1$sM\u00e1s informaci\u00f3n%2$s&quot;,&quot;Safe Mode is on&quot;:&quot;Modo seguro activado&quot;,&quot;%1$sSafe mode is on%2$s&quot;:&quot;%1$sModo seguro activado%2$s&quot;,&quot;View this Tumblr&quot;:&quot;Ver este Tumblr&quot;,&quot;This content contains adult content which violates our Community Guidelines.&quot;:&quot;Esta publicaci\u00f3n incluye contenido para adultos y, por tanto, infringe las Normas de la comunidad.&quot;,&quot;This post was flagged because we think it contains adult content which violates our Community Guidelines. It has been hidden from others, but not deleted. If you think this was done in error, tap Appeal and a real, live human will review it.&quot;:&quot;Hemos marcado esta publicaci\u00f3n porque creemos que incluye contenido para adultos y, por lo tanto, incumple las Normas de la comunidad. De momento, est\u00e1 oculta para el resto de usuarios, pero no la hemos eliminado. Si crees que se trata de un error, utiliza el bot\u00f3n para solicitar una revisi\u00f3n y un miembro de nuestro equipo se encargar\u00e1 de comprobarla.&quot;,&quot;Your post is in content appeal. Once a decision has been made, we&#039;ll send you an email.&quot;:&quot;Esta publicaci\u00f3n se encuentra en revisi\u00f3n. Te enviaremos un correo electr\u00f3nico cuando hayamos tomado una decisi\u00f3n.&quot;,&quot;This post was flagged because it contains adult content which violates our Community Guidelines. It has not been deleted but is now only viewable to you. This decision cannot be appealed.&quot;:&quot;Hemos marcado esta publicaci\u00f3n porque incluye contenido para adultos y, por lo tanto, incumple las Normas de la comunidad. No la hemos eliminado, pero, a partir de ahora, solo podr\u00e1s verla t\u00fa. Esta decisi\u00f3n es definitiva y no podr\u00e1s solicitar que se revise.&quot;,&quot;This post was flagged because somewhere in your reblog there might be adult content which is a violation of our Community Guidelines.&quot;:&quot;Hemos marcado esta publicaci\u00f3n porque el reblogueo inclu\u00eda contenido para adultos y, por lo tanto, incumpl\u00eda las Normas de la comunidad.&quot;,&quot;This reblog is in content appeal&quot;:&quot;Este reblogueo se ha enviado al equipo de revisi\u00f3n&quot;,&quot;Your post is in content appeal&quot;:&quot;Tu contenido se ha enviado al equipo de revisi\u00f3n&quot;,&quot;This post was flagged because somewhere in your reblog there might be adult content.&quot;:&quot;Hemos marcado esta publicaci\u00f3n porque parece que el reblogueo inclu\u00eda contenido para adultos.&quot;,&quot;It looks like your post might be in violation of our Community Guidelines and is now hidden.&quot;:&quot;Parece que tu publicaci\u00f3n podr\u00eda incumplir nuestras Normas de la comunidad, as\u00ed que hemos decidido ocultarla.&quot;,&quot;Based on our Community Guidelines this post contains adult content and is now only viewable to you.&quot;:&quot;Seg\u00fan nuestras Normas de la comunidad, esta publicaci\u00f3n incluye contenido para adultos y, a partir de ahora, solo t\u00fa podr\u00e1s verla.&quot;,&quot;Your appeal was accepted! This post is no longer hidden.&quot;:&quot;Hemos valorado tu solicitud de revisi\u00f3n y \u00a1ten\u00edas raz\u00f3n! Este contenido ya no est\u00e1 oculto.&quot;,&quot;Dismiss&quot;:&quot;Descartar&quot;,&quot;Appeal&quot;:&quot;Solicitar revisi\u00f3n&quot;,&quot;This post contains filtered tags&quot;:&quot;Esta publicaci\u00f3n contiene etiquetas filtradas&quot;,&quot;Are you sure you want to log out?&quot;:&quot;\u00bfSeguro que quieres cerrar la sesi\u00f3n?&quot;,&quot;Likes&quot;:&quot;Me gusta&quot;,&quot;Following&quot;:&quot;Siguiendo&quot;,&quot;New&quot;:&quot;A\u00f1adir blog&quot;,&quot;Account&quot;:&quot;Cuenta&quot;,&quot;Settings&quot;:&quot;Configuraci\u00f3n&quot;,&quot;Help&quot;:&quot;Ayuda&quot;,&quot;Log out&quot;:&quot;Cerrar sesi\u00f3n&quot;,&quot;Posts&quot;:&quot;Publicaciones&quot;,&quot;Reach&quot;:&quot;Alcance&quot;,&quot;Followers&quot;:&quot;Seguidores&quot;,&quot;Activity&quot;:&quot;Actividad&quot;,&quot;Members&quot;:&quot;Miembros&quot;,&quot;Drafts&quot;:&quot;Borradores&quot;,&quot;Queue&quot;:&quot;En cola&quot;,&quot;Processing&quot;:&quot;Procesando&quot;,&quot;Review flagged posts&quot;:&quot;Comprobar publicaciones marcadas&quot;,&quot;Analytics&quot;:&quot;Estad\u00edsticas&quot;,&quot;Sponsor&quot;:&quot;Patrocinador&quot;,&quot;Sponsored&quot;:&quot;Patrocinado&quot;,&quot;About Tumblr Ads&quot;:&quot;Acerca de la publicidad en Tumblr&quot;,&quot;Edit appearance&quot;:&quot;Modificar apariencia&quot;,&quot;Your blog info, account info, and recent activity are in these menus.&quot;:&quot;La informaci\u00f3n de tu blog, los datos de tu cuenta y tu actividad reciente se encuentran en estos men\u00fas.&quot;,&quot;Wait, why?&quot;:&quot;Pero \u00bfpor qu\u00e9?&quot;,&quot;Okay, phew&quot;:&quot;\u00a1Ah, vale!&quot;,&quot;Why?&quot;:&quot;\u00bfQu\u00e9 ofrecemos?&quot;,&quot;It&#039;s so you never have to scroll to the top of the dashboard to access this stuff.&quot;:&quot;Lo hemos juntado todo aqu\u00ed para que no tengas que desplazarte hacia la parte superior del Escritorio cada vez que quieras acceder a estas opciones.&quot;,&quot;Ohhh&quot;:&quot;Aaaah&quot;,&quot;Loading\u2026&quot;:&quot;Cargando...&quot;,&quot;%1$s notes&quot;:&quot;%1$s notas&quot;,&quot;%1$s note&quot;:&quot;%1$s nota&quot;,&quot;%1$s views&quot;:&quot;%1$s visitas&quot;,&quot;%1$s view&quot;:&quot;%1$s visita&quot;,&quot;%1$s added this GIF to a post&quot;:&quot;%1$s ha utilizado este GIF en una publicaci\u00f3n&quot;,&quot;%1$s posted this&quot;:&quot;%1$s ha publicado esto&quot;,&quot;%1$s%2$s likes%3$s&quot;:&quot;%1$s%2$s Me gusta%3$s&quot;,&quot;%1$s%2$s like%3$s&quot;:&quot;%1$s%2$s Me gusta%3$s&quot;,&quot;%1$s%2$s reblogs%3$s&quot;:&quot;%1$s%2$s reblogueos%3$s&quot;,&quot;%1$s%2$s reblog%3$s&quot;:&quot;%1$s%2$s reblogueo%3$s&quot;,&quot;%1$s%2$s likes%3$s and %4$s%5$s reblogs%3$s&quot;:&quot;%1$s%2$s Me gusta%3$s y %4$s%5$s reblogueos%3$s&quot;,&quot;%1$s%2$s likes%3$s and %4$s%5$s reblog%3$s&quot;:&quot;%1$s%2$s Me gusta%3$s y %4$s%5$s reblogueo%3$s&quot;,&quot;%1$s%2$s like%3$s and %4$s%5$s reblogs%3$s&quot;:&quot;%1$s%2$s Me gusta%3$s y %4$s%5$s reblogueos%3$s&quot;,&quot;Reply&quot;:&quot;Responder&quot;,&quot;Add to the discussion&quot;:&quot;Comparte tu opini\u00f3n&quot;,&quot;Unleash a compliment&quot;:&quot;Haz un cumplido&quot;,&quot;Have something to say?&quot;:&quot;\u00bfAlgo que decir?&quot;,&quot;Reply your heart out&quot;:&quot;Abre tu coraz\u00f3n&quot;,&quot;Add something wonderful&quot;:&quot;Comparte algo espectacular&quot;,&quot;Send something nice&quot;:&quot;Di algo bonito&quot;,&quot;Your words here&quot;:&quot;Aqu\u00ed es donde van las palabras&quot;,&quot;Say your thing&quot;:&quot;\u00bfAlgo que decir?&quot;,&quot;Block %1$s&quot;:&quot;Bloquear a %1$s&quot;,&quot;Report&quot;:&quot;Denunciar&quot;,&quot;%1$sReport %2$s&#039;s post?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$s\u00bfSeguro que quieres denunciar el blog de %2$s?%3$sSi infringe las normas de la comunidad, lo eliminaremos.%4$s&quot;,&quot;%1$sReport %2$s&#039;s reply?%3$sIf it violates our community guidelines, we&#039;ll remove it.%4$s&quot;:&quot;%1$s\u00bfSeguro que quieres denunciar el blog de %2$s?%3$sSi infringe las normas de la comunidad, lo eliminaremos.%4$s&quot;,&quot;Hide note&quot;:&quot;Ocultar nota&quot;,&quot;Delete reply&quot;:&quot;Borrar respuesta&quot;,&quot;%1$sYou definitely want to hide this note?%2$s&quot;:&quot;%1$s\u00bfSeguro que quieres ocultar esta nota?%2$s&quot;,&quot;%1$sYou definitely want to delete this reply?%2$s&quot;:&quot;%1$s\u00bfSeguro que quieres borrar esta respuesta?%2$s&quot;,&quot;%1$sDelete your tip??%2$s&quot;:&quot;%1$s\u00bfQuieres eliminar la propina?%2$s&quot;,&quot;Deleting your tip&quot;:&quot;Al hacerlo, solo la borrar\u00e1s de la pesta\u00f1a de las respuestas y de las notas. %1$sNo recibir\u00e1s ning\u00fan reembolso por tu propina%2$s. Si necesitas ayuda o tienes alguna otra pregunta, %3$sescribe al equipo de asistencia de Tumblr%4$s.&quot;,&quot;Hide it&quot;:&quot;S\u00ed, ocultadla&quot;,&quot;Delete it&quot;:&quot;S\u00ed, borradla&quot;}}"></noscript><script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=3adb836a96eddc27a1180d62826b0901"></script></body></html>
+<!-- partial -->
+  
+</body>
+</html>
